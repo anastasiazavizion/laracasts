@@ -2,7 +2,9 @@
   <h1>Edit Idea</h1>
 
   <form method="POST" action="/ideas/{{ $idea->id }}">
+    @csrf
     @method('PUT')
+    <x-form.errors />
   <div class="col-span-full">
           <label for="description" class="block text-sm/6 font-medium text-white">New Idea</label>
           <div class="mt-2">
@@ -19,6 +21,7 @@
   </form>
 
   <form id="delete-form" method="POST" action="/ideas/{{ $idea->id }}">
+    @csrf
     @method('DELETE')
 </form>
 </x-layout>
