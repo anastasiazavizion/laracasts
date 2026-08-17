@@ -1,0 +1,27 @@
+[90m= [39m[34;4mIlluminate\Support\Collection[39;24m {#7405
+    [34mall[39m: [
+      [34m"[39m[34mideas[39m[34m"[39m => [34;4mIlluminate\Routing\Route[39;24m {#298
+        +[1muri[22m: [32m"[39m[32mideas[39m[32m"[39m,
+        +[1mmethods[22m: [
+          [32m"[39m[32mPOST[39m[32m"[39m,
+        ],
+        +[1maction[22m: [
+          [34m"[39m[34mmiddleware[39m[34m"[39m => [
+            [32m"[39m[32mweb[39m[32m"[39m,
+          ],
+          [34m"[39m[34muses[39m[34m"[39m => [34;4mClosure()[39;24m {#299 …4},
+          [34m"[39m[34mnamespace[39m[34m"[39m => [36mnull[39m,
+          [34m"[39m[34mprefix[39m[34m"[39m => [32m""[39m,
+          [34m"[39m[34mwhere[39m[34m"[39m => [],
+        ],
+        +[1misFallback[22m: [36mfalse[39m,
+        +[1mcontroller[22m: [36mnull[39m,
+        +[1mdefaults[22m: [],
+        +[1mwheres[22m: [],
+        +[1mparameters[22m: [36mnull[39m,
+        +[1mparameterNames[22m: [36mnull[39m,
+        +[1mcomputedMiddleware[22m: [36mnull[39m,
+        +[1mcompiled[22m: [36mnull[39m,
+      },
+    ],
+  }
