@@ -41,8 +41,19 @@
   </div>
 
   <div class="navbar-end">
-    <a href="/register" class="btn">Register</a>
+    @guest
+        <a href="/login" class="btn btn-ghost">Login</a>
+        <a href="/register" class="btn">Register</a>
+    @endguest
+
+    @auth
+        <form method="POST" action="/logout">
+            @csrf
+            <button type="submit" class="btn">Logout</button>
+        </form>
+    @endauth
   </div>
+
 </div>
 
         <main class="max-width-3xl mx-auto pt-4">
