@@ -38,6 +38,9 @@
       <li><a href="/ideas">Home</a></li>
       @auth
       <li><a href="/ideas/create">New Ideas</a></li>
+      @can('view-admin')
+      <li><a href="/admin">Admin</a></li>
+      @endcan   
       @endauth
     </ul>
   </div>

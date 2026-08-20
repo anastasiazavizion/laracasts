@@ -8,7 +8,7 @@
       @foreach($ideas as $idea)
         <div class="card bg-neutral text-neutral-content">
           <div class="card-body items-center text-center">
-            {{ $idea->description }}
+            <a href="/ideas/{{ $idea->id }}" class="card-title">{{ $idea->description }}</a>
           </div>
         </div>
       @endforeach
