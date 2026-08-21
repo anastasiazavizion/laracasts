@@ -45,11 +45,14 @@ class IdeaController extends Controller
         Gate::authorize('create', Idea::class);
         $validated = $request->validated();
 
-        Auth::user()->ideas()->create([
+        $idea = Auth::user()->ideas()->create([
             'description' => $validated['description'],
             'state' => 'new'
         ]);
 
+        //notify the user
+        $idea->user->notify(new \App\Notifications\IdeaPublished($idea));
+        
         return redirect('/ideas');
     }
 
